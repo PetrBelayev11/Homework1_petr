@@ -6,23 +6,24 @@ find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(std_srvs REQUIRED)
 find_package(geometry_msgs REQUIRED)
+find_package(turtlesim REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 find_package(builtin_interfaces REQUIRED)
 set(CMAKE_CXX_STANDARD 17)
 
 set(dependencies
   rclcpp
+  turtlesim
   std_msgs
   std_srvs
   geometry_msgs
 )
 
-# rosidl_generate_interfaces(${PROJECT_NAME}
-#   "msg/TwistArray.msg"
-#   "srv/StartStop.srv"
-#   DEPENDENCIES ${dependencies} builtin_interfaces std_msgs
-
-# )
+rosidl_generate_interfaces(${PROJECT_NAME}
+  "msg/TwistArray.msg"
+  "srv/StartStop.srv"
+  DEPENDENCIES ${dependencies} builtin_interfaces std_msgs geometry_msgs
+)
 
 add_executable(commander_node src/commander_node.cpp)
 ament_target_dependencies(commander_node ${dependencies})
@@ -44,18 +45,7 @@ ament_target_dependencies(status_node ${dependencies})
 
 include_directories(include)
 
-# rosidl_target_interfaces(commander_node
-#   ${PROJECT_NAME} "rosidl_typesupport_cpp")
-# rosidl_target_interfaces(start_server
-#   ${PROJECT_NAME} "rosidl_typesupport_cpp")
-# rosidl_target_interfaces(turtles_spawner
-#   ${PROJECT_NAME} "rosidl_typesupport_cpp")
-# rosidl_target_interfaces(collector_node
-#   ${PROJECT_NAME} "rosidl_typesupport_cpp")
-# rosidl_target_interfaces(mapper_node
-#   ${PROJECT_NAME} "rosidl_typesupport_cpp")
-# rosidl_target_interfaces(status_node
-#   ${PROJECT_NAME} "rosidl_typesupport_cpp")
+
 
 install(TARGETS
   commander_node
@@ -68,9 +58,12 @@ install(TARGETS
   LIBRARY DESTINATION lib
   RUNTIME DESTINATION lib/${PROJECT_NAME}
 )
+install(DIRECTORY launch
+  DESTINATION share/${PROJECT_NAME}
+)
 
 ament_export_include_directories(include)
 ament_export_dependencies(${dependencies})
-# ament_export_dependencies(rosidl_default_runtime)
+ament_export_dependencies(rosidl_default_runtime)
 
 ament_package()
