@@ -1,0 +1,287 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-73dd81d1a035dd17b315.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23
+					]
+				},
+				{
+					"build" : "homework1_petr__py",
+					"jsonFile" : "directory-homework1_petr__py-3ee55b3b98a035abeb66.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "build/homework1_petr/homework1_petr__py",
+					"targetIndexes" : 
+					[
+						6
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "homework1_petr",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_homework1_petr_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_homework1_petr_egg-5c4cabb8216e150add56.json",
+					"name" : "ament_cmake_python_build_homework1_petr_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_homework1_petr::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_homework1_petr-07992d063164bc7b439e.json",
+					"name" : "ament_cmake_python_copy_homework1_petr",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "collector_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-collector_node-7304f015963a0af78f19.json",
+					"name" : "collector_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "commander_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-commander_node-8697b9371a7c34c57fb9.json",
+					"name" : "commander_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "homework1_petr::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-homework1_petr-bc1efe76c3fccf6553c5.json",
+					"name" : "homework1_petr",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "homework1_petr__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-homework1_petr__cpp-d5e6f0c1aca3ad5db481.json",
+					"name" : "homework1_petr__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "homework1_petr__py::@9ffc96b948ad36fcc7a6",
+					"jsonFile" : "target-homework1_petr__py-c7fab3b7ff1caa9b4fcc.json",
+					"name" : "homework1_petr__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "homework1_petr__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-homework1_petr__rosidl_generator_c-e7a93a0603fa3bbdc921.json",
+					"name" : "homework1_petr__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "homework1_petr__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-homework1_petr__rosidl_generator_py-c0907e4ff7e431ae75dc.json",
+					"name" : "homework1_petr__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "homework1_petr__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-homework1_petr__rosidl_typesupport_c-0bbc07841a32cbd8f164.json",
+					"name" : "homework1_petr__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "homework1_petr__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-homework1_petr__rosidl_typesupport_c__pyext-7cc67dd2e5ea61ff4dbd.json",
+					"name" : "homework1_petr__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "homework1_petr__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-homework1_petr__rosidl_typesupport_cpp-d89934f6c82db65c288c.json",
+					"name" : "homework1_petr__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "homework1_petr__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-homework1_petr__rosidl_typesupport_fastrtps_c-3f617605d6c0fb9d4804.json",
+					"name" : "homework1_petr__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "homework1_petr__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-homework1_petr__rosidl_typesupport_fastrtps_c__pyext-aa483c6a7c98fe2091db.json",
+					"name" : "homework1_petr__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "homework1_petr__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-homework1_petr__rosidl_typesupport_fastrtps_cpp-e2c2172d0001ae4dda3b.json",
+					"name" : "homework1_petr__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "homework1_petr__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-homework1_petr__rosidl_typesupport_introspection_c-db140836e26d61a2079b.json",
+					"name" : "homework1_petr__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "homework1_petr__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-homework1_petr__rosidl_typesupport_introspection_c__pyext-6888e2d04191a7da4cae.json",
+					"name" : "homework1_petr__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "homework1_petr__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-homework1_petr__rosidl_typesupport_introspection_cpp-b299908648feeaaafca9.json",
+					"name" : "homework1_petr__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "homework1_petr_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-homework1_petr_uninstall-0e5e000047acd1a22995.json",
+					"name" : "homework1_petr_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mapper_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mapper_node-53ee10969b259dd621a6.json",
+					"name" : "mapper_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "start_server::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-start_server-88dfc6812c5fcd756e0c.json",
+					"name" : "start_server",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "status_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-status_node-dd1958f1bba5197b28cf.json",
+					"name" : "status_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "turtles_spawner::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-turtles_spawner-7223efff1d125ffdf64d.json",
+					"name" : "turtles_spawner",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-7809161840de767c7175.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/petr/ros2_workspace/src/homework1_petr/build/homework1_petr",
+		"source" : "/home/petr/ros2_workspace/src/homework1_petr"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

@@ -1,0 +1,21 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/homework1_petr__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/homework1_petr/msg/detail/pose_array_custom__type_support.c.o"
+  "CMakeFiles/homework1_petr__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/homework1_petr/msg/detail/pose_array_custom__type_support.c.o.d"
+  "CMakeFiles/homework1_petr__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/homework1_petr/msg/detail/twist_array__type_support.c.o"
+  "CMakeFiles/homework1_petr__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/homework1_petr/msg/detail/twist_array__type_support.c.o.d"
+  "CMakeFiles/homework1_petr__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/homework1_petr/srv/detail/start_stop__type_support.c.o"
+  "CMakeFiles/homework1_petr__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/homework1_petr/srv/detail/start_stop__type_support.c.o.d"
+  "libhomework1_petr__rosidl_typesupport_introspection_c.pdb"
+  "libhomework1_petr__rosidl_typesupport_introspection_c.so"
+  "rosidl_typesupport_introspection_c/homework1_petr/msg/detail/pose_array_custom__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/homework1_petr/msg/detail/pose_array_custom__type_support.c"
+  "rosidl_typesupport_introspection_c/homework1_petr/msg/detail/twist_array__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/homework1_petr/msg/detail/twist_array__type_support.c"
+  "rosidl_typesupport_introspection_c/homework1_petr/srv/detail/start_stop__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/homework1_petr/srv/detail/start_stop__type_support.c"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/homework1_petr__rosidl_typesupport_introspection_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

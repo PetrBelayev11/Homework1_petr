@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from homework1_petr/srv/StartStop.srv
+// generated code does not contain a copyright notice
+
+
+module homework1_petr {
+  module srv {
+    @verbatim (language="comment", text=
+      "Request (empty)")
+    struct StartStop_Request {
+      int32 f;
+    };
+    @verbatim (language="comment", text=
+      "Response (empty)")
+    struct StartStop_Response {
+      int32 n;
+    };
+  };
+};

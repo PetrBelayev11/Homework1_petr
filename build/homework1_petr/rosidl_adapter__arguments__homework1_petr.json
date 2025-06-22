@@ -1,0 +1,8 @@
+{
+  "package_name": "homework1_petr",
+  "non_idl_tuples": [
+    "/home/petr/ros2_workspace/src/homework1_petr:msg/TwistArray.msg",
+    "/home/petr/ros2_workspace/src/homework1_petr:srv/StartStop.srv",
+    "/home/petr/ros2_workspace/src/homework1_petr:msg/PoseArrayCustom.msg"
+  ]
+}

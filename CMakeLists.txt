@@ -7,6 +7,7 @@ find_package(std_msgs REQUIRED)
 find_package(std_srvs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(turtlesim REQUIRED)
+find_package(tf2 REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 find_package(builtin_interfaces REQUIRED)
 set(CMAKE_CXX_STANDARD 17)
@@ -14,6 +15,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(dependencies
   rclcpp
   turtlesim
+  tf2
   std_msgs
   std_srvs
   geometry_msgs
