@@ -17,11 +17,14 @@ set(dependencies
   std_msgs
   std_srvs
   geometry_msgs
+  rosidl_default_generators
+  builtin_interfaces
 )
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/TwistArray.msg"
   "srv/StartStop.srv"
+  "msg/PoseArrayCustom.msg"
   DEPENDENCIES ${dependencies} builtin_interfaces std_msgs geometry_msgs
 )
 
@@ -45,7 +48,18 @@ ament_target_dependencies(status_node ${dependencies})
 
 include_directories(include)
 
-
+rosidl_target_interfaces(commander_node
+  ${PROJECT_NAME} "rosidl_typesupport_cpp")
+rosidl_target_interfaces(start_server
+  ${PROJECT_NAME} "rosidl_typesupport_cpp")
+rosidl_target_interfaces(turtles_spawner
+  ${PROJECT_NAME} "rosidl_typesupport_cpp")
+rosidl_target_interfaces(collector_node
+  ${PROJECT_NAME} "rosidl_typesupport_cpp")
+rosidl_target_interfaces(mapper_node
+  ${PROJECT_NAME} "rosidl_typesupport_cpp")
+rosidl_target_interfaces(status_node
+  ${PROJECT_NAME} "rosidl_typesupport_cpp")
 
 install(TARGETS
   commander_node

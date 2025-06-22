@@ -1,4 +1,4 @@
-geometry_msgs/Twist turtle1
-geometry_msgs/Twist turtle2
-geometry_msgs/Twist turtle3
-geometry_msgs/Twist turtle4
+geometry_msgs/Twist t1
+geometry_msgs/Twist t2
+geometry_msgs/Twist t3
+geometry_msgs/Twist t4

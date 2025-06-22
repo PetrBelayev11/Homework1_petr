@@ -6,9 +6,8 @@
 #include "turtlesim/srv/kill.hpp"
 #include "turtlesim/srv/spawn.hpp"
 #include "homework1_petr/turtle_info.hpp"
+
 using namespace std::chrono_literals;
-
-
 
 class TurtlesSpawner : public rclcpp::Node
 {
@@ -35,21 +34,14 @@ private:
     request->name = "turtle1";
 
     auto result = kill_client_->async_send_request(request,
-      [this](rclcpp::Client<turtlesim::srv::Kill>::SharedFuture future) {
-        (void)future;
+      [this](rclcpp::Client<turtlesim::srv::Kill>::SharedFuture /*future*/) {
         RCLCPP_INFO(this->get_logger(), "Initial turtle killed");
-
         spawn_turtles();
       });
   }
 
   void spawn_turtles()
   {
-    struct TurtleInfo {
-      float x, y, theta;
-      std::string name;
-    };
-
     std::vector<TurtleInfo> turtles = {
       {1.0, 1.0, M_PI / 2.0f, "turtle1"},
       {8.0, 5.0, M_PI / 2.0f, "turtle2"},
@@ -60,11 +52,10 @@ private:
     spawn_next_turtle(turtles, 0);
   }
 
-  void spawn_next_turtle(const std::vector<TurtleInfo> &turtles, size_t index)
+  void spawn_next_turtle(const std::vector<TurtleInfo> turtles, size_t index)
   {
     if (index >= turtles.size()) {
-      RCLCPP_INFO(this->get_logger(), "All turtles spawned, node exiting...");
-      rclcpp::shutdown();
+      RCLCPP_INFO(this->get_logger(), "All turtles spawned.");
       return;
     }
 
@@ -75,8 +66,7 @@ private:
     request->name = turtles[index].name;
 
     auto result = spawn_client_->async_send_request(request,
-      [this, &turtles, index](rclcpp::Client<turtlesim::srv::Spawn>::SharedFuture future) {
-        (void)future;
+      [this, turtles, index](rclcpp::Client<turtlesim::srv::Spawn>::SharedFuture /*future*/) {
         RCLCPP_INFO(this->get_logger(), "Spawned %s", turtles[index].name.c_str());
         spawn_next_turtle(turtles, index + 1);
       });
